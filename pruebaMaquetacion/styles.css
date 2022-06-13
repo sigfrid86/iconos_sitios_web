@@ -1,0 +1,50 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:2%;
+  grid-template-areas: 
+                      "tres tres tres cuatro cuatro cuatro"
+                      "tres tres tres cinco cinco cinco"
+                      "uno uno uno uno uno uno"
+                      "dos dos dos dos dos dos"
+                      "seis siete siete siete siete ocho";
+}
+.main > div{
+
+  height: 100%;
+  width: 100%;
+}
+.uno{
+  grid-area: uno;
+  background-color: orange;
+}
+.dos{
+  grid-area: dos;
+  background-color: orange;
+}
+.tres{
+  grid-area: tres;
+  background-color: yellow;
+}
+.cuatro{
+  grid-area: cuatro;
+  background-color: purple;
+}
+.cinco{
+  grid-area: cinco;
+  background-color: purple;
+}
+.seis{
+  grid-area: seis;
+  background-color: green;
+}
+.siete{
+  grid-area: siete;
+  background-color: green;
+}
+.ocho{
+  grid-area: ocho;
+  background-color: green;
+}

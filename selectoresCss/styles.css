@@ -1,0 +1,117 @@
+
+
+*, *:after ,*:before{
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+body{
+  width: 100%;
+  height: 100%;
+  color:red;
+  display: block;
+  margin-bottom: 2em;
+  padding: 2em 5%;
+}
+*{
+  transition: .4s all ease-in-out;
+}
+script{
+  display: none;
+}
+p{
+  color:blue;
+  margin-bottom: 1em;
+}
+/* .container p:first-child{
+  color: cyan
+}
+.container p:last-child{
+  color: cyan
+} */
+.container p:nth-child(3n - 2){
+  color: cyan
+}
+p:hover{
+  color:green;
+}
+/* #second{
+  color:black;
+}
+.second{
+  color:green;
+} */
+/* #name{
+  color:yellow;
+} */
+input{
+  display: block;
+  margin-bottom: 2em;
+  border: 3px solid green;
+  
+}
+input:hover{
+  border: 3px solid black
+}
+input[type="text"]{
+  background-color: aqua;
+}
+input[type="number"]{
+  background-color: red;
+}
+
+.test{
+  width: 500px;
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+}
+.test:hover{
+  background-color: red;
+}
+.test::after{
+  content: "";
+  display: block;
+  width: 90%;
+  height: 90%;
+  background-color: cyan;
+  margin: auto;
+}
+.test::before{
+  content: "";
+  display: block;
+  width: 95%;
+  height: 95%;
+  background-color: blue;
+  margin: auto;
+}
+
+
+
+
+.breadcums{
+  width: 100%;
+  display: flex;
+}
+.breadcums a{
+  color:inherit;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 1em;
+  display: flex
+}
+.breadcums a:hover{
+  color: black;
+}
+.breadcums a::after{
+  content:"/";
+  display: block;
+  margin-left: 1em;
+}
+.breadcums a:last-child{
+  margin-right: 0;
+}
+.breadcums a:last-child:after{
+  display: none;
+}
