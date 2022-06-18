@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclos</title>
+</head>
+<body>
+  <script>
+    var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var frutas = ["Manzana", "Pera", "Naranja", "Sandia", "Melon"];
+    
+    console.log(frutas.length, '-- Longitud del array');
+    // FOR
+    for (let i = 1; i <= 100; i++) {
+      console.log(i);
+    }
+
+    //WHILE
+    var i = 1;
+    while (i != 1) {
+      console.log(i, '-- While');
+      i++;
+    }
+
+    // DO WHILE
+    var e = 1;
+    do {
+      console.log(e, '-- Do While');
+      e++;
+    } while (e == 1);
+
+    // SWITCH
+    var nombre = "angel";
+    switch (nombre) {
+      case "miguel":
+        console.log(nombre, 'Case 1 -- Switch');
+        break;
+      case "angel":
+        console.log(nombre, 'Case 2 -- Switch');
+        break;
+      case "juan":
+        console.log(nombre, 'Case 3 -- Switch');
+        break;
+      default:
+        console.log(nombre, 'Default -- Switch');
+        break;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables JS</title>
+</head>
+<body>
+  <h1>Variables JS</h1>
+  <script>
+
+    // Declaración de variables
+    
+    let nombre2 = "Pedro"; // Let es una variable que solo se puede usar dentro de una función
+    const nombre3 = "Juan"; // Const es una variable que no se puede cambiar de tipo
+
+    // Imprimir variables
+    console.log(nombre, '-- Nombre 1');
+
+    // Imprimir variables con tipo de dato
+    console.log(typeof nombre, '-- Tipo de datos');
+
+    //Strings
+    let nombreString = "Miguel";
+    let apellidoString = "Rivera";
+
+    console.log(nombreString + " " + apellidoString, '-- Nombre completo');
+    console.log(`${nombreString} ${apellidoString}`, '-- Nombre completo');
+
+    //Numeros
+    let numero = 10;
+    let numero2 = 20;
+    
+    console.log(numero % numero2, '-- Suma');
+
+    //Booleanos
+    let booleano = true;
+    let booleano2 = false;
+
+    console.log(booleano, '-- Booleano');
+
+    //Arrays
+    let array = [1, 2, 3, 4, 59];  
+
+    console.log(array[3], '-- Array');
+
+    //Objetos
+    let objeto = {
+      nombre: "Miguel",
+      apellido: "Rivera",
+      materias:{
+        matematicas: "5",
+        ingles: "5",
+        programacion: "5"
+      },
+      edad: 20
+    };
+    //JSON
+    // Java script object notation
+    console.log(objeto.materias.matematicas, '-- Objeto');
+    console.log(objeto["materias"]["matematicas"], '-- Objeto');
+
+    //Funciones
+    function saludar(nombre, apellido){
+      console.log(`Hola ${nombre} ${apellido} desde funcion 1`);
+    }
+    const saludar2 = function(nombre){
+      console.log(`Hola ${nombre}`);
+    }
+    const saludar3 = (nombre) => {
+      console.log(`Hola ${nombre}`);
+    }
+    var nombre = true; // Variable global
+    // condicionales
+    // == igual valor
+    // === igual tipo y valor
+    // != diferente valor
+    // !== diferente valor y tipo
+    // > mayor que
+    // < menor que
+    // >= mayor o igual que
+    // <= menor o igual que
+    // && and
+    // || or
+    // ! not
+    if(!nombre){
+      console.log('Si');
+    }else{
+      console.log('No');
+    }
+  </script>
+</body>
+</html>
